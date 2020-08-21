@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- TODO: index.css is the name -->
     <link rel="stylesheet" href="design\testimonial.css" />
+    <!-- TODO: Refactor this to use @import instead -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
     <section class="slideshow-container">
-
       <div class="my-slides">
         <div class="testimonial-background">
-          <img src="../coding-bootcamp-testimonials-slider-master/images/image-tanya.jpg" alt="image-tanya"
+          <img src="./images/image-tanya.jpg" alt="image-tanya"
             class="style-image" />
         </div>
         <div class="testimonial-text">
@@ -32,7 +32,7 @@
 
       <div class="my-slides">
         <div class="testimonial-background">
-          <img src="../coding-bootcamp-testimonials-slider-master/images/image-john.jpg" alt="image-john"
+          <img src="./images/image-john.jpg" alt="image-john"
             class="style-image" />
         </div>
         <div class="testimonial-text">
@@ -48,14 +48,15 @@
       </div>
 
       <div class="button-style">
-        <img onclick="plusSlides(-1)" src="../coding-bootcamp-testimonials-slider-master/images/icon-prev.svg"
+        <img onclick="plusSlides(-1)" src="./images/icon-prev.svg"
           alt="button" class="prev">
-        <img onclick="plusSlides(1)" src="../coding-bootcamp-testimonials-slider-master/images/icon-next.svg"
+        <img onclick="plusSlides(1)" src="./images/icon-next.svg"
           alt="button" class="next">
       </div>
 
     </section>
-    <script src="../coding-bootcamp-testimonials-slider-master/testimonials.js"></script>
+    <!-- TODO: Rename this file to index.js -->
+    <script src="./testimonials.js"></script>
   </body>
 
 
