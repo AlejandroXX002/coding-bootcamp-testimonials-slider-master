@@ -5,18 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="design\testimonial.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- TODO: index.css name replaced -->
+    <link rel="stylesheet" href="design\index.css" />
+    <!-- @import refactored -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+    </style>
   </head>
 
   <body>
-
     <section class="slideshow-container">
-
       <div class="my-slides">
         <div class="testimonial-background">
-          <img src="../coding-bootcamp-testimonials-slider-master/images/image-tanya.jpg" alt="image-tanya"
-            class="style-image" />
+          <img src="./images/image-tanya.jpg" alt="image-tanya" class="style-image" />
+          <div class="button-style">
+            <img onclick="plusSlides(-1)" src="./images/icon-prev.svg" alt="button" class="prev">
+            <img onclick="plusSlides(1)" src="./images/icon-next.svg" alt="button" class="next">
+          </div>
         </div>
         <div class="testimonial-text">
           <q> I’ve been interested in coding for a <br>
@@ -32,9 +37,13 @@
 
       <div class="my-slides">
         <div class="testimonial-background">
-          <img src="../coding-bootcamp-testimonials-slider-master/images/image-john.jpg" alt="image-john"
-            class="style-image" />
+          <img src="./images/image-john.jpg" alt="image-john" class="style-image" />
+          <div class="button-style">
+            <img onclick="plusSlides(-1)" src="./images/icon-prev.svg" alt="button" class="prev">
+            <img onclick="plusSlides(1)" src="./images/icon-next.svg" alt="button" class="next">
+          </div>
         </div>
+
         <div class="testimonial-text">
           <q>If you want to lay the best <br>
             foundation possible I’d recommend <br>
@@ -47,15 +56,10 @@
         </div>
       </div>
 
-      <div class="button-style">
-        <img onclick="plusSlides(-1)" src="../coding-bootcamp-testimonials-slider-master/images/icon-prev.svg"
-          alt="button" class="prev">
-        <img onclick="plusSlides(1)" src="../coding-bootcamp-testimonials-slider-master/images/icon-next.svg"
-          alt="button" class="next">
-      </div>
 
     </section>
-    <script src="../coding-bootcamp-testimonials-slider-master/testimonials.js"></script>
+    <!-- TODO: Rename this file to index.js -->
+    <script src="./testimonials.js"></script>
   </body>
 
 
