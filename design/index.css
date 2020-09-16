@@ -14,19 +14,11 @@
 }
 
 .testimonial-text {
-	/* 👏🏼 Chingón */
 	background-image: url(../images/pattern-curve.svg);
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	background-size: 100%;
 	padding-bottom: 30%;
-}
-
-.style-image {
-	display: block;
-	height: auto;
-	margin: auto;
-	max-width: 100%;
 }
 
 q {
@@ -40,6 +32,13 @@ q {
 	font-weight: 300;
 	padding-top: 20px;
 	text-align: center;
+}
+
+.style-image {
+	display: block;
+	height: auto;
+	margin: auto;
+	max-width: 100%;
 }
 
 span {
@@ -56,12 +55,9 @@ span {
 	max-width: -moz-fit-content;
 	max-width: fit-content;
 	transition: 0.6s ease;
-}
-
-.button-style {
 	position: absolute;
-	right: 38%;
-	bottom: 20px;
+	right: 42%;
+	bottom: 25px;
 }
 
 .button-style:hover {
@@ -70,5 +66,56 @@ span {
 
 .prev,
 .next {
-	padding: 15px;
+	padding: 8px 15px 8px 15px;
+}
+
+@media screen and (min-width: 1102px) {
+	.my-slides {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "text profile";
+	}
+
+	.testimonial-background {
+		grid-area: profile;
+		margin: auto;
+		padding: 15%;
+		background-size: 90%;
+	}
+
+	.testimonial-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		grid-area: text;
+		background-image: url(../images/pattern-curve.svg);
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 100%;
+		padding-bottom: 30%;
+	}
+
+	q {
+		background-position: top left 20%;
+		background-size: 30%;
+		font-size: 32px;
+	}
+
+	.button-style {
+		position: absolute;
+		left: 20%;
+		bottom: 70px;
+		box-shadow: 2px 2px 5px 2px lightgray;
+	}
+
+	img[src$="jpg"] {
+		box-shadow: 0px 0.5px 10px 1px lightgray;
+	}
+
+	span {
+		position: relative;
+		right: 70%;
+	}
 }
